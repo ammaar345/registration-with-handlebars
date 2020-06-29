@@ -1,0 +1,101 @@
+body {
+    font-size: 130%;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 38%, rgba(9,121,116,1) 63%);
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em; */
+    padding: 4em;
+    list-style:none ;
+}
+h1{font-weight: 800;}
+
+.right {
+    padding-left: 2em;
+}
+
+.bottom{padding-bottom: 1.5em;}
+input[type="button"] {
+    font-weight: 200;
+}
+
+.more {
+    padding-left: 12em;
+    padding-top: 0.5em;
+}
+.btnAdd {
+    /* float: right; */
+    background-color:cadetblue;
+    border-radius: 5px;
+
+    font-size: 13px;
+    width: 6.3em;
+    height: 2.3em;
+    /* text-align: center; */
+    
+}
+.btnAdd:hover, .btnAdd:focus {
+    background-color: #2980B9;
+  
+}
+.btnAdd{
+    cursor: pointer;
+    
+    text-align: start;
+    }
+    .left{padding-right: 3em;}
+.flex {
+    display: flex;
+    zoom: 1;
+}
+.min{padding-top: 1.2em;}
+.top {
+    padding-top: 2em;
+    
+}
+
+.higherbottom{padding-bottom: 0.5em;}
+
+select {
+    color: black;
+    background-color:wheat;
+   width: 8em;
+   border-radius: 5px;
+}
+.regNumber{width: 10em;
+height: 1.5em;
+}
+.regNumList{list-style-type: none;
+padding-right: 2em;}
+.success{color: green;
+font-weight: 100;
+padding: 1px;
+text-align: center;
+width: fit-content;
+height: 1.7px;
+text-decoration:underline green;
+}
+.failed{color: red;
+    /* border: wheat 1px outset; */
+    width: fit-content;
+text-align: center;
+height: 1.7px;
+text-decoration:underline red;
+   }
+   .padding{padding: 1em;}
+.plateStyle {
+     
+    background-color: yellow;
+    width: 7.5em;
+    font-weight: 900;
+    margin:1em;
+    border-radius: 0.3em;
+  padding: 4px;  
+    border:1px solid black ;
+    text-align:  center ;
+    display: inline-block;
+  }
+  
+li {list-style-type: none}
+ul{list-style-type:none;}
