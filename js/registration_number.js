@@ -25,7 +25,7 @@ function filtering() {
 
     reg = { registration: plateFunc.filter(townVal) };
     res.innerHTML = regTemplate(reg);
-res.classList.add("plateStyle");
+// res.classList.add("plateStyle");
 
 }
 
@@ -43,7 +43,7 @@ function append() {
 
     var reg = { registration: plateFunc.plateStorage() };
     res.innerHTML = regTemplate(reg);
-    res.classList.add("plateStyle");
+    // res.classList.add("plateStyle");
 
     setTimeout(function () {
         msg.innerHTML = "";

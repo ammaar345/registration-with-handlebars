@@ -53,9 +53,9 @@
 </div>
     </div>
     <script type="text/x-template" class="regList">
-{{registration}}
-
-
+{{#each registration}}
+<li class="plateStyle">{{this}}</li>
+{{/each}}
     </script>
     <div class="row">
         <!-- <div class="resultReg"> -->
