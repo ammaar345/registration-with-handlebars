@@ -13,7 +13,7 @@ const town = document.getElementById("townSelect");
 const msg = document.querySelector(".msg");
 const regNumList = document.querySelector(".regNumList");
 
-var reg = { registration:plateFunc.filter("all") };
+var reg = { registration: plateFunc.filter("all") };
 res.innerHTML = regTemplate(reg);
 
 // var reg = { registration: plateFunc.plateStorage() };
@@ -23,17 +23,10 @@ function filtering() {
     var townVal = town.options[town.selectedIndex].value;
     //loop over a list of reg numbers
 
-reg={registration:plateFunc.filter(townVal)};
-res.innerHTML = regTemplate(reg);
+    reg = { registration: plateFunc.filter(townVal) };
+    res.innerHTML = regTemplate(reg);
 
-    // regNumbers = plateFunc.filter(townVal);
-    // for (var i = 0; i < regNumbers.length; i++) {
-    //     const currentReg = regNumbers[i];
-    //  var node = document.createElement("li");
-    //      regNumList.appendChild(node);
-    //     node.innerHTML = currentReg;
-    //      node.classList.add("plateStyle")
-    // }
+
 }
 
 function append() {
@@ -41,12 +34,6 @@ function append() {
     var textVal = (text.value).toUpperCase();
     msg.innerHTML = plateFunc.checkText(textVal);
     msg.classList.add(plateFunc.classAdd(textVal))
-    // if (plateFunc.checkExists(textVal, plateFunc.plateStorage())) {
-    //     var node = document.createElement("li");
-    //     regNumList.appendChild(node);
-    //     node.innerHTML = textVal;
-    //     node.classList.add("plateStyle")
-    // }
     plateFunc.addRegNumber(textVal);
     var storingPlates = plateFunc.plateStorage();
     var regPlates = JSON.stringify(storingPlates);
@@ -64,7 +51,7 @@ function append() {
         msg.classList.remove("failed");
 
     }, 4000)
-    //console.log(plateFunc.filter("CJ"))
+
 }
 
 filtering()
