@@ -25,7 +25,7 @@ function filtering() {
 
     reg = { registration: plateFunc.filter(townVal) };
     res.innerHTML = regTemplate(reg);
-
+res.classList.add("plateStyle");
 
 }
 
