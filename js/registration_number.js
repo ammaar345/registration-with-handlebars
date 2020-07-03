@@ -16,8 +16,6 @@ const regNumList = document.querySelector(".regNumList");
 var reg = { registration: plateFunc.filter("all") };
 res.innerHTML = regTemplate(reg);
 
-// var reg = { registration: plateFunc.plateStorage() };
-//     res.innerHTML = regTemplate(reg);
 function filtering() {
     res.innerHTML = "";
     var townVal = town.options[town.selectedIndex].value;
@@ -25,7 +23,7 @@ function filtering() {
 
     reg = { registration: plateFunc.filter(townVal) };
     res.innerHTML = regTemplate(reg);
-// res.classList.add("plateStyle");
+
 
 }
 
@@ -43,8 +41,8 @@ function append() {
 
     var reg = { registration: plateFunc.plateStorage() };
     res.innerHTML = regTemplate(reg);
-    // res.classList.add("plateStyle");
 
+    filtering();
     setTimeout(function () {
         msg.innerHTML = "";
         msg.classList.remove("success");
@@ -54,6 +52,6 @@ function append() {
 
 }
 
- filtering()
+filtering()
 button.addEventListener("click", append)
 town.addEventListener("change", filtering)
